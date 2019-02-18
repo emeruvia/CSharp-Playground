@@ -38,7 +38,7 @@ namespace Intermediate
                             loop = false;
                             break;
                         default:
-                            break;
+                            throw new InvalidOperationException("Your options are 'start', 'stop' or 'exit'.");
                     }
                 }
                 catch (InvalidOperationException ex)
