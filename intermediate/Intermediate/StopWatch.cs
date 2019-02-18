@@ -3,7 +3,7 @@
 namespace Intermediate
 {
     // The job of this class is to simulate a stopwatch.
-    class StopWatch : IStopWatch
+    internal class StopWatch : IStopWatch
     {
         public TimeSpan Interval { get; private set; }
         private DateTime _startTimeSpan;

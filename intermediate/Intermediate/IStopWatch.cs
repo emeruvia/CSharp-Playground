@@ -2,7 +2,7 @@
 
 namespace Intermediate
 {
-    interface IStopWatch
+    internal interface IStopWatch
     {
         void Start();
         void Stop();

@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\github\\CSharp-Playground\\intermediate\\Intermediate\\Intermediate\\Intermediate.csproj",
+      "projectUniqueName": "E:\\github\\CSharp-Playground\\intermediate\\Intermediate\\Intermediate.csproj",
       "projectName": "Intermediate",
-      "projectPath": "E:\\github\\CSharp-Playground\\intermediate\\Intermediate\\Intermediate\\Intermediate.csproj",
+      "projectPath": "E:\\github\\CSharp-Playground\\intermediate\\Intermediate\\Intermediate.csproj",
       "packagesPath": "C:\\Users\\SumringaH\\.nuget\\packages\\",
-      "outputPath": "E:\\github\\CSharp-Playground\\intermediate\\Intermediate\\Intermediate\\obj\\",
+      "outputPath": "E:\\github\\CSharp-Playground\\intermediate\\Intermediate\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
