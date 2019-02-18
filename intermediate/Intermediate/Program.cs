@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace Intermediate
 {
@@ -7,6 +8,8 @@ namespace Intermediate
         static void Main(string[] args)
         {
             InitStopWatch();
+            InitPosts();
+            Console.ReadLine();
         }
 
         private static void InitStopWatch()
@@ -18,7 +21,7 @@ namespace Intermediate
                 try
                 {
                     var input = Console.ReadLine()?.ToLower();
-                    if (String.IsNullOrEmpty(input))
+                    if (string.IsNullOrEmpty(input))
                     {
                         throw new InvalidOperationException("Input cannot be null or empty");
                     }
@@ -43,6 +46,39 @@ namespace Intermediate
                     Console.WriteLine(ex.Message);
                 }
             }
+        }
+
+        private static void InitPosts()
+        {
+            // Random StackOverflow post
+            const string title = "What is the difference between a field and a property?";
+            const string description = "In C#, what makes a field different from a property," +
+                                       " and when should a field be used instead of a property?";
+            var newPost = new Post(title, description);
+
+            //Randomize the number of posts
+            var rand = new Random();
+            var i = rand.Next(150);
+            while (i > 0)
+            {
+                var temp = rand.Next(i);
+                if (temp % 2 == 0)
+                {
+                    newPost.Downvote();
+                }
+                else
+                {
+                    newPost.Downvote();
+                }
+
+                i--;
+            }
+
+            var message = $"Title: {newPost.Title}\n" +
+                          $"at: {newPost.DateTime}\t" +
+                          $"votes: {newPost.Votes}\n\n" +
+                          $"Description:\n{newPost.Description}";
+            Console.WriteLine(message);
         }
     }
 }
