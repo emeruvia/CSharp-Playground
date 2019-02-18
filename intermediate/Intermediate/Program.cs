@@ -68,7 +68,7 @@ namespace Intermediate
                 }
                 else
                 {
-                    newPost.Downvote();
+                    newPost.Upvote();
                 }
 
                 i--;
