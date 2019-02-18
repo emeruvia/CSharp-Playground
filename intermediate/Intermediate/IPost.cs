@@ -2,7 +2,7 @@
 {
     internal interface IPost
     {
-        int Upvote();
-        int Downvote();
+        int UpVote();
+        int DownVote();
     }
 }

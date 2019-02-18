@@ -19,7 +19,7 @@ namespace Intermediate
 
             _startTimeSpan = DateTime.Now;
             _started = true;
-            Console.WriteLine("started...");
+            Print.PrintMessage("started...");
         }
 
         public void Stop()
@@ -32,7 +32,7 @@ namespace Intermediate
             _started = false;
             _stopTimeSpan = DateTime.Now;
             Interval = _stopTimeSpan - _startTimeSpan;
-            Console.WriteLine("stopped...");
+            Print.PrintMessage("stopped...");
             PrintTimer();
         }
 
@@ -41,7 +41,8 @@ namespace Intermediate
             var message = $"\nStarted at: {_startTimeSpan}\t\t" +
                           $"Stopped at: {_stopTimeSpan}\n" +
                           $"Timer: {Interval.Seconds} seconds...";
-            Console.WriteLine(message);
+            Print.PrintMessage(message);
         }
+
     }
 }

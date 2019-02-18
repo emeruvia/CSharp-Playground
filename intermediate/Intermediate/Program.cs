@@ -43,7 +43,7 @@ namespace Intermediate
                 }
                 catch (InvalidOperationException ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    Print.PrintMessage(ex.Message);
                 }
             }
         }
@@ -64,11 +64,11 @@ namespace Intermediate
                 var temp = rand.Next(i);
                 if (temp % 2 == 0)
                 {
-                    newPost.Downvote();
+                    newPost.DownVote();
                 }
                 else
                 {
-                    newPost.Upvote();
+                    newPost.UpVote();
                 }
 
                 i--;
@@ -78,7 +78,7 @@ namespace Intermediate
                           $"at: {newPost.DateTime}\t" +
                           $"votes: {newPost.Votes}\n\n" +
                           $"Description:\n{newPost.Description}";
-            Console.WriteLine(message);
+            Print.PrintMessage(message);
         }
     }
 }

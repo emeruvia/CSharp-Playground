@@ -22,12 +22,12 @@ namespace Intermediate
             DateTime = DateTime.Now;
         }
 
-        public int Upvote()
+        public int UpVote()
         {
             return _votes += 1;
         }
 
-        public int Downvote()
+        public int DownVote()
         {
             return _votes -= 1;
         }
