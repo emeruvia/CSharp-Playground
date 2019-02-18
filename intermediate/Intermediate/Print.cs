@@ -2,7 +2,7 @@
 
 namespace Intermediate
 {
-    class Print
+    static class Print
     {
         public static void PrintMessage(string message)
         {
